@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+
+
+/* Slides */
+.carousel-slide {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Frase */
+.elegant-phrase {
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sombras do carrossel */
+.carousel-container {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

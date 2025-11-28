@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Terço ✝️</title>
+
+    <link rel="shortcut icon" href="imgs/cruz.png" type="image/x-icon">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-light': '#FFF8F4',
+                        'accent-soft': '#FEE79F',
+                        'text-dark': '#4A4A4A',
+                        'highlight-rose': '#FFC0CB',
+                    },
+                    fontFamily: {
+                        'title-elegant': ['Vidaloka', 'serif'],
+                        'body-soft': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-primary-light font-body-soft text-text-dark min-h-screen antialiased">
+
+
+    <header class="p-4 bg-white/70 backdrop-blur-sm border-b border-highlight-rose/50">
+        <div class="max-w-6xl mx-auto flex justify-center">
+            <h1 class="text-xl font-semibold text-accent-soft">Nosso Tercinho ✝️</h1>
+        </div>
+    </header>
+
+    <!-- Carrossel -->
+    <div class="carousel-container relative w-full overflow-hidden mx-auto rounded-lg mt-4" style="max-width: 1200px; height: 100vh;">
+
+        <div id="carousel" class="w-full h-full relative">
+
+            <img class="carousel-slide active"
+                 src="imgs/imgg1.jpg"
+                 alt="Flores brancas e delicadas"
+                 data-slide="0">
+
+            <img class="carousel-slide"
+                 src="imgs/imgg2.jpg"
+                 alt="Velas acesas e ambiente suave"
+                 data-slide="1">
+
+            <img class="carousel-slide"
+                 src="imgs/imgg3.jpg"
+                 alt="Pôr do sol em tons pastel"
+                 data-slide="2">
+
+            <img class="carousel-slide"
+                 src="imgs/imgg4.jpg"
+                 alt="Imagem de reflexão"
+                 data-slide="3">
+            
+             <img class="carousel-slide"
+                 src="imgs/img6.jpg"
+                 alt="Imagem de reflexão"
+                 data-slide="3">
+            
+
+             <img class="carousel-slide"
+                 src="imgs/imgg7.jpg"
+                 alt="Imagem de reflexão"
+                 data-slide="3">
+            
+             <img class="carousel-slide"
+                 src="imgs/imgg8.jpg"
+                 alt="Imagem de reflexão"
+                 data-slide="3">
+
+                 <img class="carousel-slide"
+                 src="imgs/imgg5.jpg"
+                 alt="Imagem de reflexão"
+                 data-slide="3">
+           
+
+        </div>
+
+        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/50 hover:bg-white/80 transition-all duration-300 rounded-full text-text-dark/80 z-20 shadow-md">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+
+        <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/50 hover:bg-white/80 transition-all duration-300 rounded-full text-text-dark/80 z-20 shadow-md">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+
+        <div id="dots-container" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20"></div>
+    </div>
+
+    <main class="max-w-6xl mx-auto py-16 px-4">
+        <section class="text-center">
+            <h2 class="elegant-phrase text-text-dark text-6xl md:text-8xl italic leading-tight p-4">
+                Vamos rezar o terço <span class="text-accent-soft">?</span>
+            </h2>
+            <p class="text-lg mt-4 text-text-dark/80">
+                "É justo o que muito custe o que muito vale!"
+            </p>
+
+            <a href="https://meet.google.com/jsz-dgcb-yko" 
+   target="_blank"
+   class="inline-block mt-8 px-8 py-4 bg-accent-soft text-text-dark font-semibold rounded-full shadow-md hover:bg-yellow-300 transition-all duration-300">
+    Entrar no Terço ao Vivo ✝️
+</a>
+
+        </section>
+    </main>
+
+    <footer class="mt-12 py-6 bg-highlight-rose/30 text-center text-text-dark/60">
+        <p>© Feito para pessoas especiais em momentos especiais ❤️.</p>
+    </footer>
+
+    <!-- JS externo -->
+    <script src="script.js"></script>
+
+</body>
+</html>
